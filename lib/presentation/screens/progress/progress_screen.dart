@@ -9,7 +9,6 @@ class ProgressScreen extends StatelessWidget {
     return Scaffold(
       appBar: AppBar(
         title: const Text('Progress Indicators'),
-        centerTitle: true,
       ),
       body: const _ProgressView(),
     );
