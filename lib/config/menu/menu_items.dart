@@ -6,7 +6,7 @@ class MenuItem {
   final String link;
   final IconData icon;
 
-const  MenuItem({
+  const MenuItem({
     required this.title,
     required this.subTitle,
     required this.link,
@@ -15,6 +15,12 @@ const  MenuItem({
 }
 
 const appMenuItems = <MenuItem>[
+  MenuItem(
+    title: 'Riverpod Counter',
+    subTitle: 'Introducción a riverpod',
+    link: '/counter-river',
+    icon: Icons.add,
+  ),
   MenuItem(
     title: 'Botones',
     subTitle: 'Varios botones flutter',
@@ -39,13 +45,13 @@ const appMenuItems = <MenuItem>[
     link: '/snackbars',
     icon: Icons.info_outline,
   ),
-   MenuItem(
+  MenuItem(
     title: 'Animated container',
     subTitle: 'Stateful widget animado',
     link: '/animated',
     icon: Icons.check_box_outline_blank_rounded,
   ),
-   MenuItem(
+  MenuItem(
     title: 'UI Controls + Tiles',
     subTitle: 'Una serie de controles de Flutter',
     link: '/ui-controls',
@@ -56,5 +62,17 @@ const appMenuItems = <MenuItem>[
     subTitle: 'Tutorial introductorio',
     link: '/tutorial',
     icon: Icons.accessible_rounded,
+  ),
+  MenuItem(
+    title: 'InfiniteScroll y Pull',
+    subTitle: 'Listas infinitas y pull o refresh',
+    link: '/infinite',
+    icon: Icons.list_alt_rounded,
+  ),
+  MenuItem(
+    title: 'Cambiar tema',
+    subTitle: 'Cambiar tema de la aplicación',
+    link: '/theme-changer',
+    icon: Icons.color_lens_outlined,
   ),
 ];
